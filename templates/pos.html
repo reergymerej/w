@@ -1,0 +1,32 @@
+<p>The POS Screen is similar to a Detail Screen.</p>
+<ul>
+	<li>Workflow <a href="pos/pos-flow.png">(diagram)</a> <a href="pos/pos-flow.xml">(xml)</a></li>
+	<li>Saving <a href="pos/pos-save-flow.png">(diagram)</a> <a href="pos/pos-save-flow.xml">(xml)</a></li>
+	<li>Modules <a href="pos/pos-modules.png">(diagram)</a> <a href="pos/pos-modules.xml">(xml)</a></li>
+	<li>Finish Transaction <a href="pos/finishTransaction.png">(diagram)</a> <a href="pos/finishTransaction.xml">(xml)</a></li>
+	<!-- <li><a href="#ModalTemplates">Modal Templates</a></li> -->
+</ul>
+<a name="ModalTemplates"></a>
+<h4>Modal Templates</h4>
+<p>Modal Templates are embedded in the head of the html to be compiled with Underscore.
+	They should include:</p>
+<ul>
+	<li>a button with <code>name="ok"</code> and <code>data-response="SOME_URL_HERE"</code></li>
+	<li>a button with <code>name="cancel"</code></li>
+	<li>a number of fields each with a <code>data-property="SOME_FIELD_NAME"</code></li>
+</ul>
+<p>Any <code>select</code> fields with <code>from-cache="STORE_LOCATION3"</code> will have their
+	 innerhtml replaced with values fetched from the server.</p>
+
+<p>When the "ok" button is clicked, all <code>input</code> and <code>select</code> fields will be gathered
+	along with the <code>data-response</code> value of the button and passed as an object to the
+	callback provided to the <a href="http://lpt-cnu216063x.celerant.com:3000/classes/ModalTemplate.html">ModalTemplate</a>. It will look something like:</p>
+<pre class="span6">
+{
+	url: 'somewhere.html',
+	values: {
+		FIELD_A: 'asdf',
+		FIELD_B: 3
+	}
+}
+</pre>

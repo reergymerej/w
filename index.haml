@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>WRMS Documenation</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>WRMS Documentation</h1>
+		<hr />
+		<p>For the API documentation, click <a href="http://lpt-cnu216063x.celerant.com:3000/">here</a>.</p>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li><a href="#/tab/list">List Screens</a></li>
+					<li><a href="#/tab/detail">Detail Screens</a></li>
+					<li><a href="#/tab/pos">POS</a></li>
+					<li><a href="#/tab/downloads">Downloads</a></li>
+					<li><a href="#/tab/links">Links</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="detail"></div>
+			<div id="list"></div>
+			<div id="pos">
+				<p>The POS Screen is similar to a Detail Screen.</p>
+				%p Is this a new paragraph?
+				<ul>
+					<li>Workflow <a href="pos/pos-flow.png">(diagram)</a> <a href="pos/pos-flow.xml">(xml)</a></li>
+					<li>Modules <a href="pos/pos-modules.png">(diagram)</a> <a href="pos/pos-modules.xml">(xml)</a></li>
+				</ul>
+			</div>
+			<div id="downloads">
+				<p>These are files you may need or want when working on WRMS.</p>
+				<ul>
+					<li><a href="files/apache-tomcat-7.0.27-windows-x64.zip">Tomcat 7.0.27</a></li>
+					<li><a href="files/SQLEXPRWT_x64_ENU.exe">SQL Server</a></li>
+					<li><a href="files/Sublime Text 2.0.1 x64 Setup.exe">Sublime</a></li>
+					<li><code>\\192.168.10.37\edrive\devdb-dump.bak</code></li>
+				</ul>
+			</div>
+			<div id="links">
+				<ul>
+					<li>Celerant Stuff
+						<ul>
+							<li><a href="https://liberty.celerant.com/">web mail</a></li>
+							<li><a href="http://wiki.celerant.com/">Celerant Wiki</a></li>
+						</ul>
+					</li>
+					<li>References
+						<ul>
+							<li><a href="http://backbonejs.org/">Backbone.js</a></li>
+							<li><a href="http://www.diagram.ly/">Diagrams Online</a></li>
+							<li><a href="http://jsonlint.com/">JSONLint</a></li>
+							<li><a href="http://api.jquery.com/">jQuery</a></li>
+							<li><a href="http://api.jqueryui.com/">jQuery UI</a></li>
+							<li><a href="http://twitter.github.com/bootstrap/scaffolding.html">Twitter Bootstrap</a></li>
+							<li><a href="http://yui.github.com/yuidoc/syntax/index.html">YUIDoc Syntax</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

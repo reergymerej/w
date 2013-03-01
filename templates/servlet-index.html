@@ -1,0 +1,22 @@
+<h4>Servlet Index</h4>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>servlet</th>
+					<th>purpose</th>
+					<th>client -&gt; server</th>
+					<th>server -&gt; client</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% $.each(collection, function(i, servlet){ %>
+					<tr>
+						<td><%= servlet.name %></td>
+						<td><%= servlet.purpose %></td>
+						<td><%= servlet.clientToServer %></td>
+						<td><%= servlet.serverToClient %></td>
+					</tr>
+				<% }); %>
+			</tbody>
+		</table>
+</div>
