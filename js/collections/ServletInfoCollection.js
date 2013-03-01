@@ -4,7 +4,10 @@ define([
 	ServletInfo
 ){
 	var ServletInfoCollection = Backbone.Collection.extend({
-		model: ServletInfo
+		model: ServletInfo,
+		comparator: function(servlet){
+			return servlet.get('name');
+		}
 	});
 
 	// normally this is what we would return
@@ -60,7 +63,11 @@ define([
 		name: 'WPOSScreenJsonServlet.do',
 		purpose: 'get initial tables for POS Screen'
 	});
-
+	servlets.add({
+		name: 'POSLookupServlet.do',
+		purpose: 'used for lookups'
+	});
+	
 	return {
 		servlets: servlets
 	};
